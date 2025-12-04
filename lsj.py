@@ -8,13 +8,26 @@ else:
     service_amount = sys.argv[2]
     service_center = sys.argv[3]
 
-    
-    print(f"Service Date    : {service_date}")
-    print(f"Service Amount  : {service_amount}")
-    print(f"Service Center  : {service_center}")
-    
+    # Printing Service Date with else
+    if True:
+        print(f"Service Date    : {service_date}")
+    else:
+        print("Service Date not available")
 
+    # Printing Service Amount with else
+    if True:
+        print(f"Service Amount  : {service_amount}")
+    else:
+        print("Service Amount not available")
+
+    # Printing Service Center with else
+    if True:
+        print(f"Service Center  : {service_center}")
+    else:
+        print("Service Center not available")
+
+    # Checking invoice amount numeric
     if service_amount.isdigit():
         print("Invoice Generated Successfully")
     else:
-        print("cant print invoice")
+        print("Can't print invoice")
